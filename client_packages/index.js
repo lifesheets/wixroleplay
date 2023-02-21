@@ -6,8 +6,7 @@
   * @copyright Copyright (C) 2023 WixCore.Net
   */
 
-// require('./wixcore/nucleus');
-// require('./wixcore/configs');
-// require('./wixcore/methods');
-// require('./wixcore/modules');
+require('./wixcore/configs');
+require('./wixcore/nucleus');
+require('./wixcore/methods');
 require('./wixcore/plugins');

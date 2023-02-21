@@ -1,8 +1,15 @@
+"use strict"; // Created by ua.lifesheets on 20.02.2023.
+
+/**
+  * Завантаження плагінів на стороні сервера.
+  * @author Mykola Dovhopol (ua.lifesheets).
+  * @copyright Copyright (C) 2023 WixCore.Net
+  */
+
 module.exports = async () => {
     try {
-        await require('../plugins/auth');
+        // Todo : Code for development.
     } catch (e) {
-        console.log('[ERROR] Ініціалізація "Plugins"', '::', e.message);
-        console.log('[INFO]: Перевірте файл: wixcore/plugins.js');
+        WixCore.Method.Debug.Run('[WIXCORE/PLUGINS]::', e.message);
     }
 };

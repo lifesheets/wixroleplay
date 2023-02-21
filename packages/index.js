@@ -7,9 +7,8 @@
   */
 
 (async () => {
-  // await require('./wixcore/nucleus')();
-  // await require('./wixcore/configs')();
-  // await require('./wixcore/methods')();
-  // await require('./wixcore/modules')();
+  await require('./wixcore/configs')();
+  await require('./wixcore/nucleus')();
+  await require('./wixcore/methods')();
   await require('./wixcore/plugins')();
 })();

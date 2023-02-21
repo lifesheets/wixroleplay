@@ -10,6 +10,6 @@ module.exports = async () => {
     try {
         // Todo : Code for development.
     } catch (e) {
-        WixCore.Method.Debug.Run('[WIXCORE/PLUGINS]::', e.message);
+        WixCore.Module.Debug.Run('[WIXCORE/PLUGINS]::', e.message);
     }
 };

@@ -20,6 +20,6 @@ module.exports = async () => {
         // Todo: add module
 
     } catch (e) {
-        WixCore.Method.Debug.Run('[WIXCORE/NUCLEUS]::', e.message);
+        WixCore.Module.Debug.Run('[WIXCORE/NUCLEUS]::', e.message);
     }
 };

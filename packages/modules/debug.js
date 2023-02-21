@@ -6,11 +6,10 @@
   * @copyright Copyright (C) 2023 WixCore.Net
   */
 
-
-WixCore.Method.Debug = {};
+WixCore.Module.Debug = {};
 
 // Отримання повідомлень з серверної частини.
-WixCore.Method.Debug.Run = (message, args) => {
+WixCore.Module.Debug.Run = (message, args) => {
     try {
         console.log(`[DEBUG-SERVER] => ${message}`, args);
     } catch (e) {
@@ -24,7 +23,7 @@ mp.events.add('wixcore::security::methods:debug', (player, message) => {
     try {
         console.log(`[DEBUG-CLIENT][${player.socialClub}]: ${message}`);
     } catch (e) {
-        WixCore.Method.Debug.Run('Event:', e.message);
+        WixCore.Module.Debug.Run('Event:', e.message);
         console.log('[INFO]: Перевірте файл: methods/debug.js');
     }
 })

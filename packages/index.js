@@ -12,3 +12,5 @@
   await require('./wixcore/methods')();
   await require('./wixcore/plugins')();
 })();
+
+

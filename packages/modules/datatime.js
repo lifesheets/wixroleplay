@@ -1,4 +1,4 @@
-WixCore.Method.DataTime = {};
+WixCore.Module.DataTime = {};
 
 /**
   * Обробка часу для серверної частини.
@@ -7,7 +7,7 @@ WixCore.Method.DataTime = {};
   */
 
 const DateTime = new Date();
-const Constant = WixCore.Method.DataTime;
+const Constant = WixCore.Module.DataTime;
 
 // Example "ed".
 Constant.DigitFormat = function (arg) {

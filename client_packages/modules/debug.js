@@ -7,10 +7,10 @@
   */
 
 
-WixCore.Method.Debug = {};
+WixCore.Module.Debug = {};
 
-WixCore.Method.Debug.Run = function (message, ...args) {
+WixCore.Module.Debug.Run = function (message, ...args) {
   mp.events.callRemote('wixcore::security::methods:debug', `${message} | ${JSON.stringify(args)} | ${args.length}`);
 };
 
-exports = WixCore.Method.Debug;
+exports = WixCore.Module.Debug;

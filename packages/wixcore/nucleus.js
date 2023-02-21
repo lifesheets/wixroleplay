@@ -15,6 +15,8 @@ module.exports = async () => {
         WixCore.Plugin = {};
 
         await require('../modules/debug');
+        await require('../modules/datatime');
+
         // Todo: add module
 
     } catch (e) {

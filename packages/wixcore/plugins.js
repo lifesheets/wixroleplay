@@ -8,7 +8,9 @@
 
 module.exports = async () => {
     try {
-        // Todo : Code for development.
+        WixCore.Module.Base.Connect(
+            // Todo : Code for development.
+        );
     } catch (e) {
         WixCore.Module.Debug.Run('[WIXCORE/PLUGINS]::', e.message);
     }

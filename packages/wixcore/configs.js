@@ -8,7 +8,8 @@
 
 module.exports = async () => {
     try {
-        // Todo : Code for development.
+        WixCore.Config.Sequelize = require('../configs/sequelize');
+        // Todo: add config
     } catch (e) {
         console.log('[DEBUG-SERVER] => [WIXCORE/CONFIGS]::', e.message);
     }

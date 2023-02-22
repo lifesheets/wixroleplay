@@ -8,6 +8,9 @@
 
 module.exports = async () => {
     try {
+        global.fs = require('fs');
+        global.path = require('path');
+        
         global.WixCore = {};
         WixCore.Config = {};
         WixCore.Method = {};
@@ -15,6 +18,7 @@ module.exports = async () => {
         WixCore.Plugin = {};
 
         await require('../modules/debug');
+        await require('../modules/sequelize');
         await require('../modules/datatime');
 
         // Todo: add module
